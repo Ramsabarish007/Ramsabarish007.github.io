@@ -8,10 +8,12 @@ Published with GitHub Pages.
 ## What's here
 
 ```
-index.html                        the entire site (HTML + CSS + JS inline)
-assets/Ramsabarish-V-Resume.pdf   résumé — linked from the Résumé section
-assets/Ramsabarish-V-Resume.docx  editable source of the résumé
-.nojekyll                         tells GitHub Pages to serve files as-is
+index.html                              the entire site (HTML + CSS + JS inline)
+assets/Ramsabarish-V-Resume.pdf         résumé — linked from the Résumé section
+assets/Ramsabarish-V-Resume.docx        editable source of the résumé
+assets/Ramsabarish-V-Recommendation.pdf letter of recommendation
+assets/Ramsabarish-V-Recommendation.docx  source of the letter
+.nojekyll                               tells GitHub Pages to serve files as-is
 ```
 
 ## Editing
@@ -25,6 +27,7 @@ Everything lives in `index.html`, in this order:
 | Payment lifecycle diagram | `LEAK MAP` |
 | Headline numbers | `class="metrics"` |
 | Case studies + filters | `<section id="work">` |
+| Letter of recommendation | `<section id="reference">` |
 | Skill tags | `<section id="skills">` |
 | Résumé downloads | `<section id="resume">` |
 | Repository cards | `<section id="code">` |
@@ -51,6 +54,21 @@ In `<section id="resume">`, copy an `<article class="doc">` block, drop the new
 file into `assets/`, and point the links at it. To remove a variant, delete its
 block. The second card currently points at the case studies rather than a file —
 replace it if you'd rather offer a role-specific résumé.
+
+### Swapping or removing the recommendation
+
+The letter lives in `<section id="reference">`. To swap it, replace
+`assets/Ramsabarish-V-Recommendation.pdf`, then update three things in the
+HTML: the headline quote, the three `.pull` cards, and the full text inside
+`#recFull`. Update the attribution block (`.rec-av` initials, name, role, date)
+too.
+
+To remove the section, delete the `<section id="reference">` block, the
+`#reference` link in the nav, and the letter card in `<section id="resume">`.
+
+To add a second reference, duplicate the `<figure class="rec">` block — give the
+new toggle button and panel unique ids and wire them in the script alongside
+`recToggle` / `recFull`.
 
 ### Adding a case study
 

@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ramsabarish V — Product &amp; Data Analyst</title>
-<meta name="description" content="Nine years turning messy transactional data into product decisions — healthcare revenue cycle, e-commerce marketplace risk and clinical research.">
+<title>Ramsabarish V — Data Analytics, Data Science &amp; Applied AI</title>
+<meta name="description" content="Data analyst and data scientist with nine years across clinical research, pharmaceutical data, e-commerce marketplace risk and healthcare payments. Machine learning, NLP, forecasting, experimentation and data pipelines.">
 <meta name="author" content="Ramsabarish V">
-<meta property="og:title" content="Ramsabarish V — Product &amp; Data Analyst">
-<meta property="og:description" content="Nine years finding where money and time leak out of a process — and closing the gap.">
+<meta property="og:title" content="Ramsabarish V — Data Analytics, Data Science &amp; Applied AI">
+<meta property="og:description" content="I turn messy data into decisions. Nine years across healthcare, e-commerce, pharmaceutical and clinical research data.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B7A6A'/><text y='72' x='50' text-anchor='middle' font-size='62' font-family='monospace' fill='white'>R</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,7 +116,9 @@ header.stuck{border-bottom-color:var(--line)}
 .hero h1 em{font-style:normal;color:var(--jade);position:relative;white-space:nowrap}
 .hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.09em;
   background:var(--jade);opacity:.28;border-radius:2px}
-.hero-lede{color:var(--ink-2);font-size:clamp(1.02rem,.98rem + .3vw,1.16rem);max-width:54ch;margin-top:1.3rem}
+.hero-disc{font-family:var(--mono);font-size:clamp(.76rem,.72rem + .2vw,.87rem);font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--jade);margin:1.15rem 0 0}
+.hero-lede{color:var(--ink-2);font-size:clamp(1.02rem,.98rem + .3vw,1.16rem);max-width:54ch;margin-top:.9rem}
 .role-tag{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.72rem;
   font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--jade);
   background:var(--jade-soft);border-radius:100px;padding:.4rem .85rem;margin-bottom:1.4rem}
@@ -282,6 +284,41 @@ header.stuck{border-bottom-color:var(--line)}
   .case-pad{padding-inline:1rem}
 }
 
+/* Recommendation ------------------------------------------------------ */
+.rec{background:var(--surface);border:1px solid var(--line);border-radius:18px;
+  padding:clamp(1.5rem,4vw,2.8rem);box-shadow:var(--shadow);margin-top:2.2rem;position:relative;overflow:hidden}
+.rec::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--jade)}
+.rec-quote{font-family:var(--display);font-weight:500;
+  font-size:clamp(1.15rem,1rem + 1.05vw,1.65rem);line-height:1.42;letter-spacing:-.02em;
+  color:var(--ink);margin:0;max-width:44ch;text-wrap:balance}
+.rec-quote span{color:var(--jade)}
+.rec-by{display:flex;align-items:center;gap:.9rem;margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid var(--line)}
+.rec-av{width:42px;height:42px;flex:none;border-radius:50%;background:var(--jade-soft);color:var(--jade);
+  display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1rem}
+.rec-who{font-weight:600;font-size:.98rem;line-height:1.3}
+.rec-rel{font-family:var(--mono);font-size:.72rem;color:var(--ink-3);letter-spacing:.04em;margin-top:.15rem}
+.rec-date{margin-left:auto;font-family:var(--mono);font-size:.72rem;color:var(--ink-3);white-space:nowrap}
+
+.rec-pull{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:1.8rem}
+.pull{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem}
+.pull h4{font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--jade);margin-bottom:.55rem}
+.pull p{margin:0;color:var(--ink-2);font-size:.9rem;line-height:1.55}
+
+.rec-more{margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.link-btn{display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;font-family:var(--body);
+  font-size:.88rem;font-weight:600;padding:.55rem 1rem;border-radius:9px;
+  background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;
+  transition:border-color .18s,color .18s,transform .18s}
+.link-btn:hover{border-color:var(--jade);color:var(--jade);transform:translateY(-1px)}
+.link-btn .chev{width:17px;height:17px}
+#recFull[hidden]{display:none}
+#recFull{margin-top:1.5rem;border-top:1px solid var(--line);padding-top:1.5rem}
+#recFull p{color:var(--ink-2);margin:0 0 1rem;max-width:74ch;font-size:.96rem}
+#recFull p:last-child{margin-bottom:0}
+.rec-sign{font-family:var(--display);font-weight:700;color:var(--ink)}
+@media(max-width:640px){.rec-date{margin-left:0;width:100%;padding-left:3.3rem;margin-top:-.4rem}}
+
 /* Skills ------------------------------------------------------------- */
 .skill-grid{margin-top:2.2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1rem}
 .skill-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.25rem}
@@ -361,6 +398,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,7vw,5rem);padding-
     <nav class="nav-links" aria-label="Sections">
       <a href="#career">Career</a>
       <a href="#work">Work</a>
+      <a href="#reference">Reference</a>
       <a href="#skills">Skills</a>
       <a href="#resume">Résumé</a>
       <a href="#code">Code</a>
@@ -381,12 +419,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,7vw,5rem);padding-
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="role-tag"><span class="pulse"></span>Open to product &amp; data analytics roles</span>
-        <h1>Money gets stuck. I find <em>where</em>.</h1>
+        <span class="role-tag"><span class="pulse"></span>Open to data science, ML &amp; analytics roles</span>
+        <h1>I turn messy data into <em>decisions</em>.</h1>
+        <p class="hero-disc">Data Analytics&nbsp; ·&nbsp; Data Science&nbsp; ·&nbsp; Applied AI</p>
         <p class="hero-lede">
-          Nine years turning messy transactional data into decisions teams can act on —
-          clinical trial records at ICON, pharmaceutical datasets at IQVIA, marketplace risk
-          at Flipkart, and patient payments at athenahealth.
+          Nine years across clinical research, pharmaceutical data, e-commerce
+          marketplace risk and healthcare payments — building the models,
+          experiments and pipelines behind better decisions.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#resume">
@@ -457,8 +496,8 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,7vw,5rem);padding-
     <div class="map-shell rv">
       <div class="map-head">
         <div>
-          <h2 class="map-title">Where the money stalls</h2>
-          <p>The patient payment lifecycle at athenahealth. Every stage is a place a payment can stop moving — the markers are where I found one. Select any to read what happened.</p>
+          <h2 class="map-title">Where the process breaks down</h2>
+          <p>One worked example — the patient payment lifecycle at athenahealth. Every stage is a place the process can stall; the markers are where I found one. Select any to read what happened.</p>
         </div>
         <div class="legend" aria-hidden="true">
           <span><i class="dot dot-leak"></i>Leak found</span>
@@ -699,6 +738,71 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,7vw,5rem);padding-
   </div>
 </section>
 
+<!-- ============ RECOMMENDATION ============
+     To swap the letter: replace assets/Ramsabarish-V-Recommendation.pdf,
+     then update the pull quotes, the attribution block and the full text in
+     #recFull. To remove the section entirely, delete this <section> and the
+     "#reference" link in the nav.
+     ============================================================ -->
+<section id="reference">
+  <div class="wrap">
+    <p class="eyebrow">Reference</p>
+    <h2 class="sec-title">What my manager said</h2>
+    <p class="sec-lede">Written by the manager I reported to for my full tenure at athenahealth.</p>
+
+    <figure class="rec rv" style="margin:2.2rem 0 0">
+      <blockquote class="rec-quote">
+        “Ram is particularly effective when he has the opportunity to <span>dig into a problem, understand the underlying details, and work toward a practical solution.</span>”
+      </blockquote>
+
+      <figcaption class="rec-by">
+        <span class="rec-av" aria-hidden="true">RT</span>
+        <div>
+          <div class="rec-who">Reilly Taylor</div>
+          <div class="rec-rel">Manager, Product Analytics · athenahealth</div>
+        </div>
+        <span class="rec-date">7 August 2026</span>
+      </figcaption>
+
+      <div class="rec-pull">
+        <div class="pull">
+          <h4>Ownership</h4>
+          <p>“He cares deeply about doing a good job… and is willing to stay with a challenge even when the underlying data or business context is messy.”</p>
+        </div>
+        <div class="pull">
+          <h4>Growth</h4>
+          <p>“I saw meaningful growth in how he approached communication, documentation, and the structure of his work over time.”</p>
+        </div>
+        <div class="pull">
+          <h4>Technical range</h4>
+          <p>“Strong working proficiency in SQL and Python and experience building and maintaining Airflow-based ETL workflows.”</p>
+        </div>
+      </div>
+
+      <div class="rec-more">
+        <button class="link-btn" id="recToggle" aria-expanded="false" aria-controls="recFull">
+          <span>Read the full letter</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <a class="link-btn" href="assets/Ramsabarish-V-Recommendation.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <a class="link-btn" href="assets/Ramsabarish-V-Recommendation.pdf" download>Download</a>
+      </div>
+
+      <div id="recFull" hidden>
+        <p>To Whom It May Concern,</p>
+        <p>I'm pleased to recommend Ramsabarish V. I had the opportunity to manage Ram and work closely with him across a range of analytical, reporting, and data engineering projects over a 2+ year period.</p>
+        <p>One of Ram's strongest qualities is his work ethic. He cares deeply about doing a good job, puts in the effort to work through difficult problems, and is willing to stay with a challenge even when the underlying data or business context is messy. He takes his responsibilities seriously and consistently approaches his work with a strong sense of ownership.</p>
+        <p>Ram is also very receptive to feedback. He listens carefully, reflects on coaching, and makes a genuine effort to apply what he has learned. I saw meaningful growth in how he approached communication, documentation, and the structure of his work over time. He is thoughtful about improving and does not shy away from constructive input.</p>
+        <p>From a technical perspective, Ram has strong working proficiency in SQL and Python and experience building and maintaining Airflow-based ETL workflows. He is comfortable working with source control and collaborative development practices in Bitbucket, and he has also developed practical experience using AI-assisted development tools such as Claude Code and Codex to support analysis and engineering work. He has applied these skills across data analysis, reporting automation, dashboard development, and data pipeline work.</p>
+        <p>Ram is particularly effective when he has the opportunity to dig into a problem, understand the underlying details, and work toward a practical solution. He has supported projects that required both technical problem-solving and collaboration with business stakeholders, and he consistently brings care and persistence to that work.</p>
+        <p>On a personal level, Ram is conscientious, dependable, and easy to work with. He cares about the people and teams he supports and brings a positive, earnest approach to his work.</p>
+        <p>I believe Ram would be a valuable addition to a team looking for someone who is hardworking, technically capable, committed to learning, and willing to put in the effort required to grow and succeed. I wish him the very best in his next opportunity.</p>
+        <p>Sincerely,<br><span class="rec-sign">Reilly Taylor</span></p>
+      </div>
+    </figure>
+  </div>
+</section>
+
 <!-- ============ SKILLS ============ -->
 <section id="skills">
   <div class="wrap">
@@ -757,14 +861,15 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,7vw,5rem);padding-
 
       <article class="doc rv">
         <span class="doc-ico" aria-hidden="true" style="background:var(--cyan-soft);color:var(--cyan)">
-          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11"/></svg>
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
         </span>
         <div class="doc-main">
-          <h3>Prefer the short version?</h3>
-          <p>The work section above is the résumé with the reasoning left in — problem, approach, and what actually changed.</p>
-          <span class="doc-meta">No download required</span>
+          <h3>Letter of recommendation</h3>
+          <p>From Reilly Taylor, my manager for my full tenure at athenahealth.</p>
+          <span class="doc-meta">PDF · August 2026</span>
           <div class="doc-links">
-            <a href="#work" style="background:var(--cyan);border-color:var(--cyan)">Read the case studies</a>
+            <a href="assets/Ramsabarish-V-Recommendation.pdf" download style="background:var(--cyan);border-color:var(--cyan)">Download PDF</a>
+            <a href="#reference">Read on this page</a>
           </div>
         </div>
       </article>
@@ -820,7 +925,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,7vw,5rem);padding-
   <div class="wrap">
     <div class="contact rv">
       <h2>Let's talk about your data</h2>
-      <p>Open to product analytics and senior data analyst roles — Chennai, remote, or relocating to Bangalore or Hyderabad.</p>
+      <p>Open to Data Scientist, Machine Learning, Product Analytics and Senior Data Analyst roles — Chennai, remote, or relocating to Bangalore or Hyderabad. Always glad to collaborate on applied ML or generative AI projects.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:ramsabarish007@gmail.com">ramsabarish007@gmail.com</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/ramsabarish-vijayakumar-data-analyst" target="_blank" rel="noopener">LinkedIn</a>
@@ -997,6 +1102,18 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,7vw,5rem);padding-
       openCase(card,true);
     });
   });
+
+  /* ---- Recommendation letter toggle ---- */
+  var recBtn = document.getElementById("recToggle"), recFull = document.getElementById("recFull");
+  if (recBtn && recFull){
+    recBtn.addEventListener("click", function(){
+      var open = recFull.hidden;
+      recFull.hidden = !open;
+      recBtn.setAttribute("aria-expanded", String(open));
+      recBtn.querySelector("span").textContent = open ? "Hide the full letter" : "Read the full letter";
+      recBtn.querySelector(".chev").style.transform = open ? "rotate(180deg)" : "";
+    });
+  }
 
   document.getElementById("yr").textContent = new Date().getFullYear();
 })();
